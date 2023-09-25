@@ -51,7 +51,7 @@ body {
 
 /* Define a cor do texto para elementos com a classe .titulo-destaque como d38b06 (laranja) */
 .titulo-destaque {
-    color: #d38b06;
+            color: black; 
 }
 
 /* Estilos para elementos com a classe .conteudo */
