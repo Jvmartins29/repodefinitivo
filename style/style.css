@@ -29,11 +29,12 @@ body {
     margin: 0;
 
     /* Define a cor do texto dentro do corpo como branco */
-    color: white;
+    color: rgba(0, 0, 0, 0.925);
 }
 
 .cabecalho {
     padding: 2% 0% 0% 15%;
+    
 }
 
 .cabecalho-menu {
@@ -43,15 +44,19 @@ body {
 
 .cabecalho-menu-links{
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 600;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 /* Define a cor do texto para elementos com a classe .titulo-destaque como d38b06 (laranja) */
 .titulo-destaque {
-            color: black; 
+            color: rgba(255, 255, 255, 0.699);
+            font-family: 'Montserrat', sans-serif;
+ 
+            /* Alinha o texto justificado */
+            text-align: justify; 
 }
 
 /* Estilos para elementos com a classe .conteudo */
@@ -105,6 +110,8 @@ body {
 
 /* Estilos para elementos com a classe .apresentacao-conteudo-titulo */
 .apresentacao-conteudo-titulo {
+    color: #71dbcd;
+    text-decoration: solid;
     /* Define o tamanho da fonte como 36px */
     font-size: 36px;
 
@@ -114,6 +121,21 @@ body {
     /* Alinha o texto justificado */
     text-align: justify;
 }
+
+.apresentacao-conteudo-texto {
+     /* Define o tamanho da fonte como 24px */
+     font-size: 24px;
+
+     /* Define a família de fontes como 'Montserrat' com fallback para sans-serif */
+     font-family: 'Montserrat', sans-serif;
+ 
+     /* Alinha o texto justificado */
+     text-align: justify;
+     line-height: 1.5; 
+     margin: 10px;
+     padding: 10px;
+ }
+
 
 /* Estilos para elementos com a classe .apresentacao-conteudo-paragrafo */
 .apresentacao-conteudo-paragrafo {
@@ -554,9 +576,11 @@ body {
     /* Aumenta a escala do elemento em 10% */
     transform: scale(1.1);
 }
+
 .rodape {
     color: white;
-    background-color: #800000;
+    background-color: #000000;
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -567,8 +591,14 @@ body {
     padding: 20px;
 }
 
+.rodape a {
+    color: inherit; /* herda a cor do elemento pai (.rodape) */
+    text-decoration: inherit; /* herda a decoração de texto do elemento pai (.rodape) */
+}
+
 .rodape a:hover {
-    color: #FFA500;
+    color: #0fe4d2;
+    /* Se você deseja aplicar um estilo diferente ao link quando ele é hover, você pode adicionar mais estilos aqui. */
 }
 
 
